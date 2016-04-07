@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND="sys-utils/binutils-libs
+RDEPEND="sys-libs/binutils-libs
 	dev-libs/openssl
 	sys-apps/util-linux"
 DEPEND="${RDEPEND}
