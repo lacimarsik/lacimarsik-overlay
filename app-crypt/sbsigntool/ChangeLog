@@ -3,6 +3,4 @@
 # $Id$
 
   7 Apr 2016; lacimarsik <laci.marsik@gmail.com> ChangeLog:
-  Ebuild changed to depend on sys-libs/binutils-libs due to its requirement of
-  <bfd.h> header, originally provided by binutils and now moved to
-  binutils-libs https://forums.gentoo.org/viewtopic-t-1030702.html?sid=addd408c2fa9ba37f9fcf0a4a33c2e81
+  Modified app-crypt/sbsigntool-0.6-r1 to depend on sys-libs/binutils-libs due to its requirement of <bfd.h> header, originally provided by binutils and now moved to binutils-libs. See https://forums.gentoo.org/viewtopic-t-1030702.html?sid=addd408c2fa9ba37f9fcf0a4a33c2e81
