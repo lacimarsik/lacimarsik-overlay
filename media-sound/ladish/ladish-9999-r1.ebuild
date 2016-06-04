@@ -19,6 +19,8 @@ IUSE="doc lash python"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}
 	python? ( lash )"
 
+CXXFLAGS="$CXXFLAGS -std=c++11"
+
 # Gentoo bug #477734
 RDEPEND="!media-libs/lash
 	media-sound/jack-audio-connection-kit[dbus]
@@ -46,10 +48,6 @@ src_configure() {
 		$(usex python --enable-pylash "")
 	)
 	waf-utils_src_configure ${mywafconfargs[@]}
-}
-
-src_prepare() {
-	append-cxxflags '-std=c++11'
 }
 
 src_install() {
